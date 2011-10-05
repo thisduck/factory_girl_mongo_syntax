@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Adnan Ali"]
   s.email       = ["adnan.ali@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = "Adds factory girl alternate (Machinist) syntax to MongoMapper"
+  s.description = s.summary
 
   s.rubyforge_project = "factory_girl_mongo_syntax"
 
@@ -19,6 +19,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "mongo"
+  s.add_development_dependency "mongo_mapper"
+  s.add_development_dependency "rake"
+  s.add_runtime_dependency "factory_girl"
 end
